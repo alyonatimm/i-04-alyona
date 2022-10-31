@@ -3,7 +3,6 @@
 		'john', 'age' 
 		=> 30]; 
 	
-	$name = isset($user['name']) 
-		? $user['name']
-        : 'unknown';
+	$name = $user['name'] 
+		?? 'unknown';
 ?>
